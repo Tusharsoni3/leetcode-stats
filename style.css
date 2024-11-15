@@ -1,0 +1,121 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body{
+    background-color:#C1C1C1;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 50%;
+ }
+
+ h1{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+ }
+
+.usercontainer{
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-input-container{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-input{
+    width: 75%;
+    padding: 0.4rem;
+    border-radius: 4px;
+    border: none;
+}
+#search-btn{
+    padding: 0.4rem;
+    border-radius: 4px; 
+    width: 20%;
+    border: none;
+}
+
+.circle{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #FF6961;
+    font-weight: 600;
+    flex-direction: column;
+    background: conic-gradient(#7982B9 var(--progress-degree,0%),#A5C1DC 0%);
+}
+.circle span{
+    position: relative;
+    z-index: 2;
+}
+
+.progess{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+} 
+
+#search-btn:hover {
+    background-color: #1d7a42; 
+}
+
+
+.stats-cards {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.card {
+    background-color: rgb(230, 146, 44);
+    width: 100%; 
+    max-width: 290px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    min-height: 4rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; 
+    }
+}
